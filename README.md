@@ -59,3 +59,32 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 - ECG Rhythm Lab expanded to 31 diagnoses × 3 variants = 93 synthetic teaching strips.
 - ECG Lab prevents repetition of the same diagnosis within the most recent 20 questions.
 - Added atrial tachycardia, MAT, accelerated junctional rhythm, flutter with variable block, AF with aberrancy/irregular WCT, ventricular paced rhythm, idioventricular/AIVR, PVC bigeminy, ventricular escape rhythm, 2:1 AV block, and sinus pause/arrest.
+
+## v1.8.1 — Bradycardia record/export
+- Bradycardia page now includes a visible timeline and CSV/share/copy controls.
+- Brady treatments are exported with structured event metadata where applicable (drug, dose, pacing, pathway).
+- Possible causes are now selectable: first tap = suspected, second tap = addressed, third tap = cleared; states are logged/exported.
+- CSV adds Pathway, Cause, and Cause_Status columns.
+
+## v1.8.2 — Tachy refractory review + cause logging
+- Refractory tachycardia block is now actionable rather than a single review button.
+- Adds rhythm/12-lead re-check, higher-energy cardioversion consideration, antiarrhythmic review, and expert consultation logging.
+- Adds selectable tachycardia contributors/underlying causes with suspected → addressed → cleared states.
+- Adds Tachycardia timeline/export using the same Case ID and CSV schema.
+- Tachy cause events populate Pathway, Cause, and Cause_Status columns.
+- Contributor list is explicitly labeled as a clinical teaching checklist, not a fixed AHA Hs & Ts list.
+
+
+## v1.9 — Arrest documentation upgrade
+- Arrest page: ETT size (ID mm) + depth + EtCO2 are separately recorded/exported.
+- Added time-stamped blood draw / POC lab workflow and structured ABG/electrolyte/lactate/glucose/Hb fields.
+- Added special-circumstance medication recording for sodium bicarbonate and magnesium sulfate; UI explicitly states these are not routine cardiac-arrest drugs under 2025 AHA guidance.
+- CSV expanded with airway and lab columns.
+
+
+## v1.9.1 — Brady / Tachy initial support + Lab documentation
+- Bradycardia: added a visible initial support block (Airway/O2, monitor/BP/SpO2/pulse, IV/IO, 12-lead, PPV if needed) before pathway branching in the UI.
+- Tachycardia: expanded initial support buttons to include O2 if hypoxemic and monitor/BP/SpO2, plus IV/IO and 12-lead ECG.
+- Bradycardia and Tachycardia now each have optional time-stamped Blood draw / POC Lab panels.
+- Lab results use the same structured CSV fields as Arrest (pH, PaCO2, PaO2, HCO3, K, iCa, Mg, lactate, glucose, Hb).
+- Lab panels are explicitly marked as clinically indicated / documentation aids rather than mandatory ACLS steps.
