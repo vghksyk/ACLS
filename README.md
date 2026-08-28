@@ -36,3 +36,11 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 - Mega Code case bank expanded from 17 to 25 distinct scenarios.
 - Recent-case exclusion increased from 5 to 8 cases.
 - Added PEA due to hypovolemia, hypoxia, pulmonary thrombosis, acidosis, coronary thrombosis; toxicologic symptomatic bradycardia; second-dose adenosine SVT; unstable polymorphic VT with unsynchronized shock.
+
+
+## v1.7 Advanced Mega Code
+- ECG Lab: 36 strip variants; last 15 strip IDs are excluded from random draw.
+- Mega Code: 33 scenarios total, including advanced multi-rhythm cases with 2–4 rhythm transitions in one case.
+- Advanced cases include VF↔pVT, PEA→VF, Asystole→PEA→VF, Mobitz II→complete heart block→PEA, SVT→flutter, WCT→monomorphic VT→polymorphic VT, AF→flutter, and post-ROSC re-arrest.
+
+- v1.7.2: Advanced multi-rhythm Mega Code weighted to 85% of random draws when advanced cases are available.
