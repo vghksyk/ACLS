@@ -101,3 +101,16 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 ## v1.9.3
 - Airway documentation: ETT ID size changed to a prominent dropdown (6.0–9.0 mm + custom).
 - Removed compressor-change action from Timeline/export; compressor rotation remains a CPR team workflow reminder rather than a dedicated event log.
+
+
+## v2.1 Clinical Dashboard
+- 新增 CODE DASHBOARD：一頁式 CPR / rhythm / shock energy / epinephrine / IV-IO / airway / lab / ROSC 快速 time-stamp。
+- 原 Arrest / Brady / Tachy / Mega Code / ECG Lab / Post-ROSC 完整保留於 FULL ACLS / TRAIN。
+- 新增 AUTO REPORT，自動排除 Mega Code training events。
+- Vitals / airway / lab / medication details 改為需要時才展開。
+
+
+## v2.2 Amp-based medication presets
+- Emergency medication recording is amp-first, with automatic mg/g/mEq conversion.
+- Defaults based on public Chi Mei emergency-cart/drug data: amiodarone 150 mg/3 mL/amp; lidocaine 2% 100 mg/5 mL/amp; sodium bicarbonate 7% 20 mL/amp (16.7 mEq/amp); magnesium sulfate 10% 20 mL/amp (2 g/amp).
+- Always verify current hospital stock and local protocol before clinical use.

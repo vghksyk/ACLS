@@ -1,13 +1,10 @@
 {
   "name": "ACLS Code Leader",
   "short_name": "ACLS Leader",
-  "description": "Adult ACLS cognitive aid and training simulator",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#071019",
   "theme_color": "#071019",
-  "lang": "zh-Hant",
   "icons": [
     {
       "src": "./icon-192.png",
