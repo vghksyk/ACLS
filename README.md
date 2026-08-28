@@ -23,3 +23,16 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 
 ## Credit
 奇美加護醫學部專科護理師 洪苡瑾
+
+
+## v1.5 training updates
+- Post-ROSC temperature control: 32–37.5°C for at least 36 h if not following verbal commands after ROSC.
+- Dedicated ECG Rhythm Lab.
+- Mega Code 20-second pressure exam mode.
+- Mega Code cardioversion energy questions (AF 200 J, flutter 200 J, narrow-complex 100 J, monomorphic VT 100 J; polymorphic VT unsynchronized high-energy shock).
+
+
+## v1.5 Mega Code expansion
+- Mega Code case bank expanded from 17 to 25 distinct scenarios.
+- Recent-case exclusion increased from 5 to 8 cases.
+- Added PEA due to hypovolemia, hypoxia, pulmonary thrombosis, acidosis, coronary thrombosis; toxicologic symptomatic bradycardia; second-dose adenosine SVT; unstable polymorphic VT with unsynchronized shock.
