@@ -1,7 +1,7 @@
 {
   "name": "ACLS Code Leader",
   "short_name": "ACLS Leader",
-  "description": "Adult ACLS cognitive aid for cardiac arrest, bradycardia and tachyarrhythmia with audio prompts and event export.",
+  "description": "Adult ACLS cognitive aid with audio prompts, event export, bradycardia/tachycardia pathways, and a random Mega Code simulator.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

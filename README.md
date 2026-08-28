@@ -1,33 +1,21 @@
-# ACLS Code Leader v1.1
+# ACLS Code Leader v1.2
 
-Static PWA for GitHub Pages / Netlify.
+Adult ACLS cognitive aid + random Mega Code training simulator.
 
-## Deploy to GitHub Pages
-1. Upload every file in this folder to the repository root.
-2. GitHub → Settings → Pages → Deploy from a branch → main / root.
-3. Open the Pages URL once online. The service worker will cache the app for offline use.
-4. iPhone/iPad: Safari → Share → Add to Home Screen.
+## v1.2
+- Added **Mega Code Simulator** as a separate fifth mode.
+- Random synthetic cases: refractory VF, PEA from tension pneumothorax, PEA/hyperkalemia, symptomatic bradycardia, unstable monomorphic VT, stable SVT, unstable AF with RVR, and stable wide-complex tachycardia that can deteriorate.
+- Practice mode gives immediate feedback; Exam mode hides correctness until debrief.
+- Random age / sex / clinical setting, staged vital-sign and rhythm changes.
+- Action scoring, hints, errors, missed key actions and case-specific debrief.
+- Mega Code actions are also timestamped in the local event record and remain exportable to CSV.
 
-## v1.1
-- CPR metronome 100/110/120 bpm
-- 90 s, 110 s and 120 s audio prompts
-- 3-minute epinephrine reminder
-- rhythm- and shock-dependent voice prompts
-- local event log persistence (30-minute recovery window)
-- CSV export, native Share Sheet where supported, copyable summary
-- PWA manifest, icons, offline service worker, screen wake lock where supported
+## Existing features retained
+- Adult cardiac arrest code leader with 2-minute CPR cycle, metronome and audio reminders.
+- Bradycardia and tachycardia interactive pathways.
+- 24-hour date/time display and timestamped event log.
+- CSV export/share/copy summary.
+- PWA/offline-ready structure for GitHub Pages / Netlify.
 
-Clinical cognitive-aid prototype. Validate locally before clinical deployment.
-
-
-## v1.1 更新
-- 首頁即時顯示日期與 24 小時制時間（HH:mm:ss）
-- Event timeline 同時顯示實際 24 小時時間與事件 elapsed time
-- CSV 同時輸出本機 24 小時時間與 ISO UTC timestamp
-
-
-## 2025 AHA Bradycardia / Tachyarrhythmia update
-
-This v1.1 build adds interactive Adult Bradycardia With a Pulse and Adult Tachyarrhythmia With a Pulse pathways based on the 2025 AHA algorithms, including atropine/TCP/vasoactive infusion prompts, stability/QRS branching, adenosine, stable wide-QRS antiarrhythmic references, and 2025 synchronized cardioversion energy references.
-
-This remains a clinical cognitive-aid prototype and requires local governance/protocol validation before clinical deployment.
+## Clinical note
+This is a training/cognitive-aid prototype, not a substitute for clinician judgment, formal ACLS training, local protocols, or device-specific instructions. Mega Code cases are synthetic and simplified. Core flow logic follows the 2025 American Heart Association adult ACLS algorithms.
