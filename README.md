@@ -88,3 +88,16 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 - Bradycardia and Tachycardia now each have optional time-stamped Blood draw / POC Lab panels.
 - Lab results use the same structured CSV fields as Arrest (pH, PaCO2, PaO2, HCO3, K, iCa, Mg, lactate, glucose, Hb).
 - Lab panels are explicitly marked as clinically indicated / documentation aids rather than mandatory ACLS steps.
+
+
+## v1.9.2 — Arrest defibrillation energy dropdown
+- Replaced the free-text Biphasic energy field in Cardiac Arrest with a fast dropdown.
+- Quick options: 120 J, 150 J, 200 J, 300 J, 360 J, Maximum available, and Other/custom.
+- Other/custom reveals a numeric field for the actual joules used.
+- Shock events continue to export the selected actual energy into Timeline/CSV.
+- UI notes that defibrillation energy remains device/manufacturer- and local-protocol dependent.
+
+
+## v1.9.3
+- Airway documentation: ETT ID size changed to a prominent dropdown (6.0–9.0 mm + custom).
+- Removed compressor-change action from Timeline/export; compressor rotation remains a CPR team workflow reminder rather than a dedicated event log.
