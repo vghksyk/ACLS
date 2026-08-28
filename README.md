@@ -19,3 +19,7 @@ Adult ACLS cognitive aid + random Mega Code training simulator.
 
 ## Clinical note
 This is a training/cognitive-aid prototype, not a substitute for clinician judgment, formal ACLS training, local protocols, or device-specific instructions. Mega Code cases are synthetic and simplified. Core flow logic follows the 2025 American Heart Association adult ACLS algorithms.
+
+
+## Credit
+奇美加護醫學部專科護理師 洪苡瑾
