@@ -38,9 +38,24 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 - Added PEA due to hypovolemia, hypoxia, pulmonary thrombosis, acidosis, coronary thrombosis; toxicologic symptomatic bradycardia; second-dose adenosine SVT; unstable polymorphic VT with unsynchronized shock.
 
 
-## v1.7 Advanced Mega Code
+## v1.8 Advanced Mega Code
 - ECG Lab: 36 strip variants; last 15 strip IDs are excluded from random draw.
 - Mega Code: 33 scenarios total, including advanced multi-rhythm cases with 2–4 rhythm transitions in one case.
 - Advanced cases include VF↔pVT, PEA→VF, Asystole→PEA→VF, Mobitz II→complete heart block→PEA, SVT→flutter, WCT→monomorphic VT→polymorphic VT, AF→flutter, and post-ROSC re-arrest.
 
-- v1.7.2: Advanced multi-rhythm Mega Code weighted to 85% of random draws when advanced cases are available.
+- v1.8: Advanced multi-rhythm Mega Code weighted to 85% of random draws when advanced cases are available.
+
+
+## v1.8 Exam / Pressure flow
+- Exam mode hides live Correct / Errors counts.
+- Wrong or incomplete actions do not reveal the answer; the UI states that critical steps remain.
+- `提交本 Stage` lets the learner submit an incomplete stage and continue; missing critical actions are disclosed in Debrief.
+- Pressure mode auto-submits and advances when the 20-second decision timer expires.
+- Debrief reviews missing critical actions across every stage, not only the final stage.
+
+
+## v1.8 updates
+- Mega Code energy selection moved directly below the case card with prominent Step 1 energy buttons; Step 2 is Sync cardioversion / Defibrillation.
+- ECG Rhythm Lab expanded to 31 diagnoses × 3 variants = 93 synthetic teaching strips.
+- ECG Lab prevents repetition of the same diagnosis within the most recent 20 questions.
+- Added atrial tachycardia, MAT, accelerated junctional rhythm, flutter with variable block, AF with aberrancy/irregular WCT, ventricular paced rhythm, idioventricular/AIVR, PVC bigeminy, ventricular escape rhythm, 2:1 AV block, and sinus pause/arrest.
