@@ -1,3 +1,19 @@
+# ACLS Code Leader v2.4 — Facilitator Pacing
+
+- Mega Code 保留 **🎲 隨機新病例**。
+- 新增 **👩‍🏫 Leader 指定病例**：帶課者可依 Cardiac Arrest / Bradycardia / Tachycardia / Advanced multi-rhythm 分類，從 33 個既有病例指定練習題。
+- 指定後 Leader panel 自動收起；學員畫面會遮蔽完整 case title 與 future progression，只呈現當前情境，避免爆雷。
+- 指定病例沿用原 Practice / Exam / 20 秒 Pressure mode、ECG、energy、scoring 與 Debrief，不另外複製一套邏輯。
+- Random mode、CODE DASHBOARD、AUTO REPORT、Reset Case 與其他 Full ACLS modules 保持原有功能。
+- 下一階段如有需要，可再加入 **Facilitator Manual Case**，讓 Leader 自訂 rhythm / vitals / scene 與病況推進。
+
+# ACLS Code Leader v2.2.1 — Reset Case UX Fix
+
+- CODE DASHBOARD 與 AUTO REPORT 新增明顯的 **↻ 新病例 / 重置** 按鈕。
+- Reset 前會警告本次 Timeline 將被清除，避免誤觸。
+- Reset 現在會完整清除新版 Dashboard state：Case ID、CPR、rhythm、shock、Epi、vitals、airway、lab/med timeline、Brady/Tachy 狀態等，避免下一個 case 殘留前一案資料。
+- Full ACLS / TRAIN 原有模組內容保持不變。
+
 # ACLS Code Leader v1.2
 
 Adult ACLS cognitive aid + random Mega Code training simulator.
@@ -114,3 +130,12 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 - Emergency medication recording is amp-first, with automatic mg/g/mEq conversion.
 - Defaults based on public Chi Mei emergency-cart/drug data: amiodarone 150 mg/3 mL/amp; lidocaine 2% 100 mg/5 mL/amp; sodium bicarbonate 7% 20 mL/amp (16.7 mEq/amp); magnesium sulfate 10% 20 mL/amp (2 g/amp).
 - Always verify current hospital stock and local protocol before clinical use.
+
+
+## v2.4 Facilitator pacing
+- Mega Code 的 Leader 指定病例（Practice / Exam）改為 **Leader 控制 stage progression**，不再因學員快速按完按鈕就自動跳下一節律。
+- 新增模擬 CPR rhythm-check 節奏：**40 秒（預設） / 60 秒 / 120 秒 / Leader 手動**。
+- Learner 按下 Start / Resume CPR 後開始模擬倒數；40 秒到會提示 rhythm / pulse check，但不會自行爆雷下一個 rhythm。
+- Leader 可隨時按 **「現在 Rhythm Check」** 推進下一 Stage；若仍缺關鍵步驟，會先確認並把缺漏記入 Debrief。
+- 這個加速節奏 **僅限 Mega Code 教學／考站模擬**；CODE DASHBOARD 仍維持臨床 2 分鐘 CPR cycle，epinephrine 仍依實際 3–5 分鐘建議。
+- Pressure mode 保持每 Stage 20 秒自動推進。
