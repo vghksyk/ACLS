@@ -1,3 +1,30 @@
+# ACLS Code Leader v2.6 — New-grad Live Assist
+
+## 這版的核心定位
+**不是再增加一套 CPR 病歷。** LIVE ASSIST 是給剛進臨床、ACLS 還沒有完全內化成反射動作的醫護人員，將 timer、algorithm state、關鍵事件 timestamp 與簡短提示放在同一畫面。
+
+## v2.5 新增 / 整合
+- `⚡ LIVE ASSIST`：取代舊 CODE DASHBOARD 命名，但保留 one-tap event capture / AUTO REPORT。
+- `🧑‍🎓 新手引導` / `⚡ 快速臨床` 雙模式。
+- 固定顯示 CODE elapsed / CPR cycle / Epi timer / shock count；Current rhythm 獨立放大。
+- CPR staged cue：1:40 準備 rhythm check、1:50 defib / pulse plan ready、2:00 RHYTHM CHECK NOW。
+- `RHYTHM CHECK` one-tap timestamp；不自動竄改 CPR timer。
+- Shock count 驅動新手提示；PEA/Asystole 點 Shock 時新手模式先顯示 non-shockable guardrail。
+- ROSC 一按即停止 CPR timer並開啟 Post-ROSC quick panel；重新開始 CPR 會切回 re-arrest state。
+- PWA 離線檔補齊。
+
+## 完整保留
+- Arrest / Bradycardia / Tachycardia 完整 pathway。
+- Mega Code **33 題**：Random / Leader selected、Practice / Exam / 20-sec Pressure、40/60/120/manual Facilitator pacing、energy questions、Debrief。
+- ECG Rhythm Lab **31 diagnoses × 3 = 93 synthetic strips**。
+- Post-ROSC、Hs & Ts、Airway / ETT / EtCO₂、Lab / POC、Amp-based medication presets。
+- AUTO REPORT / CSV / Case Reset。
+
+## Clinical note
+Training / cognitive-aid prototype only. It does not replace formal ACLS training, clinician judgment, local protocols, device-specific instructions, or the institution's official CPR record.
+
+---
+
 # ACLS Code Leader v2.4 — Facilitator Pacing
 
 - Mega Code 保留 **🎲 隨機新病例**。
@@ -139,3 +166,28 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 - Leader 可隨時按 **「現在 Rhythm Check」** 推進下一 Stage；若仍缺關鍵步驟，會先確認並把缺漏記入 Debrief。
 - 這個加速節奏 **僅限 Mega Code 教學／考站模擬**；CODE DASHBOARD 仍維持臨床 2 分鐘 CPR cycle，epinephrine 仍依實際 3–5 分鐘建議。
 - Pressure mode 保持每 Stage 20 秒自動推進。
+
+
+## v2.5.1 — ECPR early assessment prompt
+- LIVE ASSIST 在 Code 10 分鐘仍無 ROSC 時顯示 ECPR / ECMO team early-assessment 提醒。
+- 可記錄「啟動／聯絡 ECPR team」、延後 2 分鐘提醒，或針對本病例關閉提示。
+- 10 分鐘為 early assessment cue，不是自動 ECPR indication；實際候選條件依院內／區域 protocol。
+- Mega Code、ECG Lab、Practice / Exam / Pressure mode 題庫內容未變更。
+
+
+## v2.6 — Mega 45 + ECG 155 + AV Block Focus
+- Mega Code: 33 → 45 cases. Existing 33 cases are preserved; 12 additional cases include AV block ladder, 2:1 AV block, Wenckebach, MAT, variable flutter, toxin WCT, hypothermia arrest, and selected ECPR scenarios.
+- ECG Rhythm Lab: 93 → 155 synthetic strips (31 diagnoses × 5 variants).
+- Added AV Block Focus mode:
+  - 1st-degree AV block
+  - Mobitz I / Wenckebach
+  - Mobitz II
+  - 2:1 AV block
+  - Complete heart block
+- AV block waveforms were redrawn for clearer teaching differences:
+  - 1°: long constant PR, no dropped beat
+  - Mobitz I: progressive PR prolongation then dropped QRS
+  - Mobitz II: fixed PR with sudden dropped QRS
+  - 2:1: alternate nonconducted P waves; do not force I vs II
+  - CHB: AV dissociation
+- Original LIVE ASSIST / ECPR prompt / Leader-selected cases / 40-sec facilitator pacing / Practice / Exam / Pressure mode / Auto Report remain.

@@ -1,10 +1,11 @@
 {
-  "name": "ACLS Code Leader",
+  "name": "ACLS Code Leader v2.6",
   "short_name": "ACLS Leader",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#071019",
   "theme_color": "#071019",
+  "lang": "zh-Hant",
   "icons": [
     {
       "src": "./icon-192.png",
