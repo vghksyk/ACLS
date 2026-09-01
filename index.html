@@ -42,12 +42,14 @@
   .ecpr-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
   .ecpr-mini{font-size:12px;color:var(--muted);margin-top:8px}
 
+
+.copyright-notice{margin:16px 2px 82px;padding:10px 12px;border:1px solid #203447;border-radius:12px;background:#08121b;color:#8fa6b9;font-size:10px;line-height:1.55;text-align:center}.clinical-code .copyright-notice,.clinical-report-mode .copyright-notice{margin-bottom:18px}.copyright-notice strong{color:#c8d5e0;font-weight:800}
 </style>
 </head>
 <body>
 <div class="app">
   <div class="top">
-    <div class="brand"><div><h1>ACLS CODE LEADER</h1><div class="credit">奇美加護醫學部專科護理師 洪苡瑾</div></div><span class="pill">Adult · v2.6</span></div>
+    <div class="brand"><div><h1>ACLS CODE LEADER</h1><div class="credit">奇美加護醫學部專科護理師 洪苡瑾</div></div><span class="pill">Adult · v2.6.1</span></div>
     <div class="datetimebar" aria-label="目前日期與時間"><span id="liveDate">----/--/--</span><strong id="liveClock">--:--:--</strong></div>
     <div class="workflowbar" aria-label="Clinical workflow mode">
       <button type="button" id="workflowCodeBtn" class="workflow-btn active-choice" onclick="switchClinicalWorkflow('code')">⚡ LIVE ASSIST</button>
@@ -401,6 +403,7 @@
 <div class="divider"></div><div class="grid2"><button class="action info" onclick="giveEpi()">Epinephrine 1 mg</button><button class="action ghost" onclick="clinicalDrugPrompt('Other medication','dose / route')">Other…</button></div>
 <div class="hint">預設包裝規格採奇美醫療體系公開急救車／藥品資料。實際使用仍依當日院內庫存、醫囑與 local protocol。</div></div></div>
 <div class="toast" id="toast"></div>
+<div class="copyright-notice"><strong>© 2026 洪苡瑾 版權所有</strong>｜未經授權請勿修改、重製、轉載、二次發布或衍生改作（請勿二改）。</div>
 <div class="footerbar"><div class="footer-inner"><button id="footerCPR" class="action primary" onclick="toggleCPR()">▶ CPR</button><button class="action danger" onclick="giveShock()">⚡ Shock</button><button class="action info" onclick="rosc()">✓ ROSC</button></div></div>
 <script>
 const STORAGE_KEY='acls-code-leader-v11-case';

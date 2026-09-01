@@ -175,7 +175,7 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 - Mega Code、ECG Lab、Practice / Exam / Pressure mode 題庫內容未變更。
 
 
-## v2.6 — Mega 45 + ECG 155 + AV Block Focus
+## v2.6.1 — Copyright + Mega 45 + ECG 155 + AV Block Focus
 - Mega Code: 33 → 45 cases. Existing 33 cases are preserved; 12 additional cases include AV block ladder, 2:1 AV block, Wenckebach, MAT, variable flutter, toxin WCT, hypothermia arrest, and selected ECPR scenarios.
 - ECG Rhythm Lab: 93 → 155 synthetic strips (31 diagnoses × 5 variants).
 - Added AV Block Focus mode:
@@ -191,3 +191,10 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
   - 2:1: alternate nonconducted P waves; do not force I vs II
   - CHB: AV dissociation
 - Original LIVE ASSIST / ECPR prompt / Leader-selected cases / 40-sec facilitator pacing / Practice / Exam / Pressure mode / Auto Report remain.
+
+
+## Copyright
+© 2026 洪苡瑾 版權所有。
+
+未經著作權人明確授權，請勿修改、重製、轉載、二次發布、改作或製作衍生版本（請勿二改）。
+本工具之臨床構想、介面流程、題庫整合與原型設計署名：奇美加護醫學部專科護理師 洪苡瑾。
