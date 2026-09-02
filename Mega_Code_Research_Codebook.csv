@@ -1,0 +1,35 @@
+﻿variable,label,measurement
+attempt_id,Unique Mega Code attempt ID,ID
+participant_code,Anonymous participant code; do not use name/MRN,Nominal
+study_group,Study group,Nominal
+timepoint,Pre/Post/Retention/Pilot,Ordinal/Nominal
+experience,Experience category,Ordinal
+attempt_no,Attempt number,Scale/Ordinal
+case_key,Mega Code case identifier,Nominal
+case_family,Cardiac Arrest/Bradycardia/Tachycardia/Advanced,Nominal
+mode,Practice/Exam/Pressure,Nominal
+source,Random/Leader,Nominal
+facilitator_cycle_sec,Facilitator pacing seconds; 0=manual,Scale
+duration_sec,Total attempt duration in seconds,Scale
+stages_total,Number of case stages,Scale
+required_steps_total,Number of scored key steps,Scale
+required_steps_completed,Completed scored key steps,Scale
+checklist_completion_pct,Completed key steps / required key steps ×100,Scale
+key_step_miss_n,Required key steps not completed,Scale
+error_n,Incorrect/non-priority actions and recorded errors,Scale
+hint_n,Hints used,Scale
+timeout_stage_n,Pressure-mode stages that timed out,Scale
+incomplete_submit_n,Stages submitted with missing key steps,Scale
+ecg_item_n,Number of ECG questions,Scale
+ecg_first_try_correct_n,ECG items correct on first response,Scale
+ecg_first_try_accuracy_pct,First-response ECG accuracy percent,Scale
+energy_item_n,Number of energy-selection questions,Scale
+energy_first_try_correct_n,Energy items correct on first response,Scale
+energy_first_try_accuracy_pct,First-response energy accuracy percent,Scale
+first_cpr_sec,Seconds from attempt start to first correct CPR action,Scale
+first_shock_sec,Seconds to first correct defibrillation action,Scale
+first_epi_sec,Seconds to first correct epinephrine action,Scale
+first_ecg_response_sec,Seconds to first ECG response,Scale
+first_energy_response_sec,Seconds to first energy response,Scale
+mean_stage_first_action_sec,Mean seconds from each stage start to first recorded action,Scale
+teaching_score_100,Teaching composite: checklist% - errors×4 - hints×2; not formally validated,Scale

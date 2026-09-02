@@ -175,7 +175,7 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 - Mega Code、ECG Lab、Practice / Exam / Pressure mode 題庫內容未變更。
 
 
-## v2.6.1 — Copyright + Mega 45 + ECG 155 + AV Block Focus
+## v2.7 — Copyright + Mega 45 + ECG 155 + AV Block Focus
 - Mega Code: 33 → 45 cases. Existing 33 cases are preserved; 12 additional cases include AV block ladder, 2:1 AV block, Wenckebach, MAT, variable flutter, toxin WCT, hypothermia arrest, and selected ECPR scenarios.
 - ECG Rhythm Lab: 93 → 155 synthetic strips (31 diagnoses × 5 variants).
 - Added AV Block Focus mode:
@@ -198,3 +198,17 @@ This is a training/cognitive-aid prototype, not a substitute for clinician judgm
 
 未經著作權人明確授權，請勿修改、重製、轉載、二次發布、改作或製作衍生版本（請勿二改）。
 本工具之臨床構想、介面流程、題庫整合與原型設計署名：奇美加護醫學部專科護理師 洪苡瑾。
+
+
+## v2.7 — Research Scoring / SPSS export
+- Mega Code now records one research row per completed attempt.
+- Anonymous metadata: participant_code, study_group, timepoint, experience, attempt_no.
+- Primary objective metrics: checklist_completion_pct, key_step_miss_n, error_n, hint_n, timeout_stage_n, duration_sec.
+- Accuracy metrics: ECG first-try accuracy and energy first-try accuracy.
+- Timing metrics: first CPR, first shock, first epinephrine, first ECG response, first energy response, mean stage first-action latency.
+- Teaching score remains available but is explicitly labelled as an unvalidated teaching composite.
+- Research dataset is local-only and exports as UTF-8 CSV with SPSS-friendly variable names.
+- Do not enter names, medical record numbers, or other identifiable participant information.
+
+### Research note
+For a thesis or formal study, pre-specify the scoring rubric and case set before enrollment. Prefer objective raw outcomes (checklist completion, misses, errors, timing, ECG accuracy) as primary/secondary endpoints. Validate content with an expert panel and pilot the instrument before claiming competency validity.
