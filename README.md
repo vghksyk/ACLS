@@ -49,3 +49,22 @@
 - Quiz 260、ECG 155、Research / SPSS、Pressure、ECPR、Auto Report 全保留。
 
 © 2026 洪苡瑾 版權所有｜請勿二改。
+
+
+## GitHub Pages / GA4
+- GA4 Measurement ID: `G-52GYL6RQWS`
+- 自動 page_view。
+- 自訂匿名 events：
+  - `module_open`
+  - `quiz_mode_select`
+  - `quiz_answer`
+  - `quiz_exam_start`
+  - `quiz_exam_complete`
+  - `quiz_wrong_review_start`
+  - `ecg_answer`
+  - `mega_track_select`
+  - `mega_case_start`
+  - `mega_case_complete`
+  - `research_tools_open`
+- 不送出 Participant code、姓名、病歷號、自由輸入內容。
+- GitHub Pages 部署：將本 ZIP 解壓後的檔案直接放在 repository root；`index.html` 必須位於最外層。
